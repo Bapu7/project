@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mountain"
+    android:orientation="vertical"
+    tools:context=".Login_Activty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginemail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="5dp"
+            android:gravity="start"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColorHint="#8e9094"
+            android:textCursorDrawable="@null"
+            android:textSize="20dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginpassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="5dp"
+            android:gravity="start"
+            android:hint="Password"
+            android:maxLength="6"
+            android:padding="20dp"
+            android:textColorHint="#8e9094"
+            android:textCursorDrawable="@null"
+            android:textSize="20dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginrpassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="5dp"
+            android:gravity="start"
+            android:hint="Re-enter   password"
+            android:maxLength="6"
+            android:padding="20dp"
+            android:textColorHint="#8e9094"
+            android:textSize="20dp"
+            app:passwordToggleEnabled="true" />
+
+        <TextView
+            android:id="@+id/fpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:hint="Forget password ?"
+            android:padding="10dp"
+            android:textColorHint="#8e9094"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:hint="Create New Account"
+            android:padding="10dp"
+            android:textColorHint="#8e9094"
+            android:textSize="15dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signinbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sbutton"
+            android:checkable="true"
+            android:hint="Sign in"
+            android:textColorHint="#8e9094"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

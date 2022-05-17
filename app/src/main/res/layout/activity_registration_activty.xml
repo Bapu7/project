@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mountain"
+    tools:context=".Registration_Activty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:padding="20dp"
+                android:drawableStart="@drawable/ic_baseline_supervisor_account_24"
+                android:drawablePadding="5dp"
+                android:gravity="start"
+                android:clickable="true"
+                android:textSize="20dp"
+                android:hint="Username"
+                android:inputType="text"
+                android:textColorHint="#8e9094"
+                android:textCursorDrawable="@null" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="5dp"
+                android:gravity="start"
+                android:hint="Email"
+                android:textSize="20dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#8e9094"
+                android:textCursorDrawable="@null" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="5dp"
+                android:gravity="start"
+                android:maxLength="10"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:textSize="20dp"
+                android:textColorHint="#8e9094"
+                android:textCursorDrawable="@null" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="5dp"
+                android:gravity="start"
+                android:hint="Password"
+                android:maxLength="6"
+                android:textSize="20dp"
+                android:textColorHint="#8e9094"
+                android:textCursorDrawable="@null" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="5dp"
+                android:gravity="start"
+                android:hint="Re-enter   password"
+                android:maxLength="6"
+                android:textSize="20dp"
+                android:textColorHint="#8e9094" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/time"
+                    android:hint="Select Date:"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#8e9094"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/date"
+                    android:hint="Select Time"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#8e9094"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:weightSum="2">
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:id="@+id/radiobutton"
+                    android:orientation="vertical">
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Male"
+                        android:id="@+id/male"
+                        android:textColorHint="#8e9094"
+                        android:textSize="20dp"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Female"
+                        android:id="@+id/female"
+                        android:textColorHint="#8e9094"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                android:hint="REGISTER"
+                android:clickable="true"
+                android:background="@drawable/sbutton"
+                android:id="@+id/registerbtn"
+                android:textColorHint="#8e9094"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="You have already an Account? Sign in"
+                android:textSize="15dp"
+                android:padding="20dp"
+                android:id="@+id/resignin"
+                android:gravity="center_horizontal"
+                android:textColorHint="#8e9094"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
